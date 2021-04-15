@@ -12,11 +12,12 @@ if (a + b < 4) {
 /* _________________________________ */
 let a=3;
 let b=6;
+let result = (a + b < 4) ? 'Below' : 'Over';
 
 //write your code here 
 console.log(result)
 
-/* _________________________________ */
+/* ____________Over_____________________ */
 
 
 //Rewrite the code below to use the ternary operator (?:) (you should be able to condense the if-else logic into one line).
@@ -32,13 +33,12 @@ else
 /* _________________________________ */
 
 let score = 42;
-let msg = "";
-
+let msg = (score > 1337) ? "This is a new highscore!" : "You need more points to beat the highscore!";
 //write your code here 
 
 console.log(msg)
 
-/* _________________________________ */
+/* _____________"You need more points to beat the highscore!"____________________ */
 
 
 // Rewrite if..else using multiple ternary operators '?'.
@@ -58,9 +58,13 @@ if (login == 'Employee') {
 
 /* _________________________________ */
 
+let login = "";
+let message = login === "Employee" ? "Hello" : login === "Director" ? "Greetings" : "No login";
+console.log(message);
 
-//write your code here 
-console.log(message)
 
-/* _________________________________ */
+
+/* _______"No login"__________________________ */
+
+
 
